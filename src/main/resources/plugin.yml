@@ -1,0 +1,4 @@
+name: THoLDiscord
+version: '${project.version}'
+main: com.melodicalbuild.tholdiscord.THoLDiscord
+api-version: '1.20'
