@@ -58,6 +58,17 @@
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
+      <repository>
+          <id>Scarsz-Nexus</id>
+          <url>https://nexus.scarsz.me/content/groups/public/</url>
+      </repository>
+      <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/melodicalbuild/tholcore</url>
+          <snapshots>
+              <enabled>true</enabled>
+          </snapshots>
+      </repository>
   </repositories>
 
   <dependencies>
@@ -67,5 +78,24 @@
           <version>1.20.4-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
+      <dependency>
+          <groupId>com.discordsrv</groupId>
+          <artifactId>discordsrv</artifactId>
+          <version>1.27.0</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.melodicalbuild</groupId>
+          <artifactId>tholcore</artifactId>
+          <version>1.0-Pre3</version>
+      </dependency>
   </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub MelodicAlbuild Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/melodicalbuild/tholdiscord</url>
+        </repository>
+    </distributionManagement>
 </project>

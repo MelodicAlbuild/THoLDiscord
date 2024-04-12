@@ -2,3 +2,8 @@ name: THoLDiscord
 version: '${project.version}'
 main: com.melodicalbuild.tholdiscord.THoLDiscord
 api-version: '1.20'
+depend:
+  - DiscordSRV
+  - THoLCore
+author: MelodicAlbuild
+description: The THoL Plugin for Discord Interfacing
